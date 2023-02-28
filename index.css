@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+/*Navbar*/
+
+.infinity-logo {
+    height: 80px;
+    width: 150px;
+}
+
+#navbar-item1 {
+    font-size: 16px;
+    color: black;
+}
+
+#navbar-item2 {
+    font-size: 16px;
+    color: black;
+}
+
+#navbar-item3 {
+    font-size: 16px;
+    color: black;
+}
+
+#navbar-item4 {
+    font-size: 16px;
+    color: black;
+}
+
+#navbar-item5 {
+    font-size: 16px;
+    color: black;
+}
+#navbar-item6 {
+    font-size: 16px;
+    color: black;
+}
+
+/*Home/banner section*/
+
+.carosel-button-style {
+    background-color: transparent;
+    border-width: 0;
+
+}
+.carousel-item-height {
+    width: 100%;
+}
+.carousel-card{
+    margin-top: 400px;
+    margin-left: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 40%;
+
+}
+.banner-section-bg-container-1 {
+    background-image: url("https://res.cloudinary.com/dymhfuzzi/image/upload/v1677497477/infinity_banner_1_zsvom3.png");
+    background-size: cover;
+    height: 100vh;
+    font-family: Roboto;
+}
+.banner-section-bg-container-2{
+    background-image: url("https://res.cloudinary.com/dymhfuzzi/image/upload/v1677498395/infinity_banner_2_abajgw.png");
+    background-size: cover;
+    height: 100vh;
+    font-family: Roboto;
+}
+.banner-section-bg-container-3{
+    background-image: url("https://res.cloudinary.com/dymhfuzzi/image/upload/v1677498559/infinity_banner_3_qtczwj.png");
+    background-size: cover;
+    height: 100vh;
+    font-family: Roboto;
+}
+.banner-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+.banner-section-description{
+    font-size: 14px;
+
+}
+@media screen and (max-width:678px){
+    .carousel-card{
+        height: 300px;
+        margin-right: 350px;
+        width: 70%;
+    }
+}
+
+/*Explore all categories*/
+
+
+  .explore-bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+    background-color:  #f5f7fa;
+    min-height: 100vh;
+  }
+  
+  .explore-heading {
+    color: #183b56;
+    font-size: 42px;
+    font-weight: bold;
+    width: 100%;
+    max-width:1000px;
+   text-align: left;
+    
+  }
+  
+  .explore-description {
+    color: #183b56;
+    font-weight: bold;
+    margin-top:20px;
+    font-size: 16px;
+    margin-bottom: 56px;
+    width: 90%;
+    max-width: 900px;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  .explore-cards-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 950px;
+  }
+  
+  .explore-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 28px;
+    padding-left: 28px;
+    margin-bottom: 24px;
+    font-family: "Open Sans";
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 18px;
+    color: #334155;
+    border:1px solid grey;
+    border-radius: 15px;
+  }
+  .explore-image{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .explore-card-description{
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+/*Trending auctions*/
+
+.trending-auctions {
+    background-color: #f5f7fa;
+}
+
+.trending-auctions-heading {
+    color: #183b56;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.trending-auctions-card {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.trending-auctions-card-heading {
+    color: #183b56;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.trending-auctions-card-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.trending-auctions-card-description {
+    color: #1f2933;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.trending-auctions-card-link {
+    color: #ff9f00;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*Products section*/
+
+.produts-heading {
+    color: #183b56;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.produts-card1 {
+    background-image: url('https://res.cloudinary.com/dymhfuzzi/image/upload/v1677507133/infinity-products-1_gbqvjg.png');
+    background-size: cover;
+    height: 50vh;
+    border-radius: 10px;
+
+}
+
+.produts-card2 {
+    background-image: url('https://res.cloudinary.com/dymhfuzzi/image/upload/v1677507202/infinity-products-2_ujldjk.png');
+    background-size: cover;
+    height: 50vh;
+    border-radius: 10px;
+
+}
+.produts-card3 {
+    background-image: url('https://res.cloudinary.com/dymhfuzzi/image/upload/v1677507338/infinity-products-3_uyvur2.jpg');
+    background-size: cover;
+    height: 50vh;
+    border-radius: 10px;
+
+}
+
+.produts-card4 {
+    background-image: url('https://res.cloudinary.com/dymhfuzzi/image/upload/v1677507520/infinity-products-4_ylh7gt.jpg');
+    background-size: cover;
+    height: 50vh;
+    border-radius: 10px;
+
+}
+
+.produts-card-heading {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.produts-card-description {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.produts-card-button {
+    background-color: white;
+    color: #ff9f00;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 16px;
+    height: 50px;
+    width: 120px;
+    border-width: 0;
+    font-weight: 400;
+}
+
+.produts-card-modelDescription {
+    color: #323f4b;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.produts-card-span {
+    color: #323f4b;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*Services section*/
+
+
+
+.services-heading {
+    color: #183b56;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.services-description {
+    color: #616c7c;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.services-card-image {
+    height: 100px;
+    width: 100px;
+}
+
+.services-card-heading {
+    color: #1f2933;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.services-card-description {
+    color: #7b8794;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*Events section*/
+
+
+.events-heading {
+    color: #183b56;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.events-card {
+    background-color: #323f4b;
+    width: 100%;
+}
+
+.events-card-image {
+    width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.events-card-description {
+    color: #9aa5b1;
+    font-size: 20px;
+    font-weight: 400;
+}
+.events-card-time{
+    color: #9aa5b1;
+}
+
+.events-card-heading {
+    color: white;
+    font-size: 24px;
+}
+
+.button-styling {
+    background-color:  #9aa5b1;
+    border-width: 0;
+}
+.events-date-button{
+ border-bottom: 0;
+ border-bottom-left-radius: 0px !important;
+ border-bottom-right-radius: 0px !important;
+ padding: 15px;
+}
+.events-date{
+    color: #0084ff;
+    font-size: 16px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+   border-top-left-radius: 0px;
+   padding-bottom: 15px;
+   padding-top: 10px;
+
+}
+
+/*Footer section*/
+
+
+
+.footer-section {
+    background-color: #19232d;
+
+}
+
+.footer-section-image {
+    height: 65px;
+    width: 80px;
+
+}
+
+.icons {
+    font-size: 26px !important;
+    color: #5a7184 !important;
+}
+
+.icon-styling {
+    background-color: #202b36;
+    padding: 18px 20px 26px 18px;
+    margin: 10px 5px 10px 5px;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+}
+
+.footer-section-description {
+    color: #5a7184;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-section-card-heading {
+    color: #5a7184;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.horizontal-line {
+    border-color: #5a7184;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-width: 2px;
+
+}
+
+.footer-section-end-description {
+    color: #959ead;
+    font-size: 18px;
+    font-weight: 500;
+}
