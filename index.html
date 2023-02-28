@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/87401dfaaa.js" crossorigin="anonymous"></script>
+    <title>Infinity Research Task</title>
+</head>
+<body>
+
+<!--All images links are produced form Cloudinary through google-->
+
+<!--NavBar Section-->
+<!--Using Bootstrap Navbar-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img class="infinity-logo" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677492709/infinity_logo_apruwi.jpg" alt="Infinity Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active pr-3" id="navbar-item1" href="#homeSection">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link pr-3" id="navbar-item2" href="#exploreCategories">Categories</a>
+                <a class="nav-link pr-3" id="navbar-item3" href="#trendinAuctions">Auctions</a>
+                <a class="nav-link pr-3 pr-2" id="navbar-item4" href="#productSection">Products</a>
+                <a class="nav-link pr-3" id="navbar-item5" href="#serviceSection">Services</a>
+                <a class="nav-link" id="navbar-item5" href="#eventsSection">Featured Events</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--Banner Section-->
+<!--Using Bootstrap Grid System-->
+
+ <div id="homeSection">
+        <div class="fluid-container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide  carousel-item-height" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <div class="banner-section-bg-container-1 d-flex flex-row justify-content-center" id="homeBannerSection">
+                                <div class="text-center carousel-card">
+                                    <h1 class="banner-heading mb-3">After Sales Service</h1>
+                                    <p class="banner-section-description">Enjoy Local Products </p>
+                                    <div class="mb-3">
+                                    <button class="btn btn-dark">View More</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="banner-section-bg-container-2 d-flex flex-row justify-content-center" id="homeBannerSection">
+                                <div class="text-center carousel-card">
+                                    <h1 class="banner-heading mb-3">See More Products</h1>
+                                    <p class="banner-section-description">Enjoy Shopping</p>
+                                    <div class="mb-3">
+                                    <button class="btn btn-dark ">Explore More</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="banner-section-bg-container-3 d-flex flex-row justify-content-center" id="homeBannerSection">
+                                <div class="text-center carousel-card">
+                                    <h1 class="banner-heading mb-3">See the Featured Events</h1>
+                                    <p class="banner-section-description">Explore New Products</p>
+                                    <div class="mb-3">
+                                    <button class="btn btn-dark mb-5">Read More</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev carosel-button-style" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next carosel-button-style" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+</div>
+
+<!--Explore Popular Categories-->
+<!--Usind Flex Box Properties-->
+
+<div class="explore-bg-container" id ="exploreCategories">
+    <h1 class="explore-heading mt-5">Explore Popular Categories</h1>
+    <p class="explore-description">
+      Recent
+    </p>
+    <div class="explore-cards-container">
+        <div class="explore-card">
+            <img class = "explore-image" src = "https://res.cloudinary.com/dymhfuzzi/image/upload/v1677528528/explore-FacilityManagement_w4elob.jpg" alt = "Facility"/>
+          <p class="explore-card-description">Facility Management</p>
+        </div>
+        <div class="explore-card">
+            <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677527134/explore-logistics_xyfqon.jpg" alt = "logistics"/>
+          <p class="explore-card-description">Logistics</p>
+        </div>
+        </div>
+        <p class="explore-description">All Categories</p>
+      <div class="explore-cards-container">
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677527317/explore-consumer-electronics_vjwhhc.png" alt = "Consumer Electronics"/>
+        <p class="explore-card-description">Consumer Electronics</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677527420/explore-agriculture_ea7440.jpg" alt = "Agriculture"/>
+        <p class="explore-card-description">Agriculture</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677527522/arel_dwhgpt.png" alt = "Apparel"/>
+        <p class="explore-card-description">Apparel</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677527586/explore-beauty_zba7h3.jpg" alt = "Beauty and Personel Care"/>
+        <p class="explore-card-description">Beauty and Personel Care</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677527648/explore-business_cnuaiq.jpg" alt = "Business Services"/>
+        <p class="explore-card-description">Business Services</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src = "https://res.cloudinary.com/dymhfuzzi/image/upload/v1677526059/explore-chemical_gtdty8.jpg" alt = "chemical"/>
+        <p class="explore-card-description">Chemicals</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677527760/explore-commercial_ei8ion.jpg" alt = "Commercial Service"/>
+        <p class="explore-card-description">Commercial Service...</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677527886/explore-commercial_ctncyb.webp" alt = "Construction and Real Estate"/>
+        <p class="explore-card-description">Construction and Real Estate</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677527978/explore-electrical_srxntq.webp" alt = "Electrical Equipment"/>
+        <p class="explore-card-description">Electrical Equipment...</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:070707,c_fill,g_auto,r_max,w_1000/v1677528095/explore-electronical-componenet_rxscsv.jpg" alt = "Electronic Component"/>
+        <p class="explore-card-description">Electronic Component...</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677528276/explore-environment_fnnr9i.png" alt = "Environment"/>
+        <p class="explore-card-description">Environment</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677528363/explore-FabricAndTextiles_udnorz.jpg" alt = "Fabric and Textiles"/>
+        <p class="explore-card-description">Fabric and Textiles</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677528446/explore-HomeTextiles_biycsj.png" alt = "Home Textiles"/>
+        <p class="explore-card-description">Home Textiles</p>
+      </div>
+      <div class="explore-card">
+        <img class = "explore-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677528720/explore-food-and-beverage_fwnpmp.jpg" alt = "Food and Beverage"/>
+        <p class="explore-card-description">Food and Beverage</p>
+      </div>
+    </div>
+  </div>
+
+<!--Trending Auctions-->
+<!--Using Bootstrap Grid System-->
+
+<div class="trending-auctions pt-5 pb-5 p-2" id="trendinAuctions">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="trending-auctions-heading pb-3">Trending Auctions</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="trending-auctions-card p-4">
+                        <h1 class="trending-auctions-card-heading pb-3">Up to 80% off | Electronics & Gadgets</h1>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="mr-4">
+                                <img class="trending-auctions-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677504344/infinity-auctions-1_fvbhvu.png" alt="auctions-watches" />
+                                <p class="trending-auctions-card-description">Smart Watch</p>
+                            </div>
+                            <div>
+                                <img class="trending-auctions-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677504425/infinity-auctions-2_qyixuh.png" alt="auctions-camera" />
+                                <p class="trending-auctions-card-description">Cameras</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="mr-4">
+                                <img class="trending-auctions-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677504527/infinity-auctions-3_sgjuwi.png" alt="auctions-sports" />
+                                <p class="trending-auctions-card-description">Sports & Fitness</p>
+                            </div>
+                            <div>
+                                <img class="trending-auctions-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677504611/infinity-auctions-4_of3ydi.png" alt="auctions-earphons" />
+                                <p class="trending-auctions-card-description">Earphones</p>
+                            </div>
+                        </div>
+                        <a class="trending-auctions-card-link" href="#homeSection">See All Deals
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="#ff9f00" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="trending-auctions-card p-4">
+                        <h1 class="trending-auctions-card-heading pb-3">Festive Offers TVs & Appliances</h1>
+                        <img class="trending-auctions-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677504700/infinity-auctions-5_yyqnu2.png" alt="auctions-tv" />
+                        <div class="pt-3">
+                            <a class="trending-auctions-card-link" href="#homeSection">See All Deals
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="#ff9f00" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="trending-auctions-card p-4">
+                        <h1 class="trending-auctions-card-heading pb-3">Under Rs 5000 | Friendly Accessories</h1>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="mr-4">
+                                <img class="trending-auctions-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677504782/infinity-auctions-6_q3ij0a.png" alt="auctions-tablet" />
+                                <p class="trending-auctions-card-description">Tablet</p>
+                            </div>
+                            <div>
+                                <img class="trending-auctions-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677504872/infinity-auctions-7_i69dcu.png" alt="auctions-playstation" />
+                                <p class="trending-auctions-card-description">Play Station</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="mr-4">
+                                <img class="trending-auctions-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677504957/infinity-auctions-8_hkomgt.png" alt="auctions-speakers" />
+                                <p class="trending-auctions-card-description">Speakers</p>
+                            </div>
+                            <div>
+                                <img class="trending-auctions-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677505033/infinity-auctions-9_xy5ajt.png" alt="auctions-vertual-reality-set" />
+                                <p class="trending-auctions-card-description">Virtual Reality Set</p>
+                            </div>
+                        </div>
+                        <a class="trending-auctions-card-link" href="#homeSection">See All Deals
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="#ff9f00" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!--Feautred Products-->
+<!--Using Bootstrap Grid System-->
+
+<div class="produts p-2" id="productSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="produts-heading pt-3 pb-3">Featured Products</h1>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="produts-card1 d-flex flex-column justify-content-end p-3 mb-3">
+                        <h1 class="produts-card-heading">Smart Headphones</h1>
+                        <p class="produts-card-description">Headphones with deep Bass, Sound, Touch.....</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="produts-card-button" data-toggle="modal" data-target="#exampleModal">
+                            View Details
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Sony WH-1000XM4 Noise Cancelling Headphones</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="produts-card-modelDescription">
+                                            Get best Smart Headphones Prices Online in India. Select from the best range of Headphones from most popular brands....
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Voice assistant:</span>
+                                            Aleax, Google Assistant & Siri.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Smart Listening:</span>
+                                            Ambient sound with the best noise cancellation.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Long battery life:</span>
+                                            A single charge provides 30 hours of play time.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Quick charging:</span>
+                                            Charge for 10 min for 5 hours play back.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Touch Controls:</span>
+                                            Change the track with your fingertip.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="produts-card2 d-flex flex-column justify-content-end p-3 mb-3">
+                        <h1 class="produts-card-heading">Laptops</h1>
+                        <p class="produts-card-description">Explore Vast selection of laptops....</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="produts-card-button" data-toggle="modal" data-target="#exampleModal1">
+                            View Details
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade mt-5" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel1">Inspiron 14 5490 core i5 Laptop</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="produts-card-modelDescription">
+                                            Get best Laptop Prices Online in India. Select from the best range of Laptop from most popular brands....
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Performance:</span>
+                                            Core i5 3rd Gen, 2.6 GHZ, 4 GB RAM.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Storage:</span>
+                                            500GB HDD, SATA, 7200 RPM.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Battery:</span>
+                                            Li-Ion, 6 cell.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Design:</span>
+                                            14.0 Inchs, 1366 X 768, 2.07 Kg, 34mm Thick.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="produts-card3 d-flex flex-column justify-content-end p-3 mb-3">
+                        <h1 class="produts-card-heading">Smart Watches</h1>
+                        <p class="produts-card-description">Watches with deep Bass, Sound, Touch.....</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="produts-card-button" data-toggle="modal" data-target="#exampleModal">
+                            View Details
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Sony WH-1000XM4 Smart visual watch</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="produts-card-modelDescription">
+                                            Get best Smart Watches Prices Online in India. Select from the best range of Watches from most popular brands....
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Voice assistant:</span>
+                                            Aleax, Google Assistant & Siri.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Smart Listening:</span>
+                                            Ambient sound with the best noise cancellation.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Long battery life:</span>
+                                            A single charge provides 30 hours of play time.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Quick charging:</span>
+                                            Charge for 10 min for 5 hours play back.
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Touch Controls:</span>
+                                            Change the track with your fingertip.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="produts-card4 d-flex flex-column justify-content-end p-3 mb-3">
+                        <h1 class="produts-card-heading">Shoes</h1>
+                        <p class="produts-card-description">Explore Vast selection of Shoes....</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="produts-card-button" data-toggle="modal" data-target="#exampleModal1">
+                            View Details
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade mt-5" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel1"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="produts-card-modelDescription">
+                                            Get best Shoes Prices Online in India. Select from the best range of Shoes from most popular brands....
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Performance:</span>
+                                            Aluminium Toe Capped Unisex Safety Shoes
+                                        </p>
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Storage:</span>
+                                            UK 10, EU 44.5.
+                                        </p>
+                                        UPower SN10014 Black Aluminium Toe Capped Unisex Safety Shoes, UK 10, EU 44.5
+                                        <p class="produts-card-modelDescription">
+                                            <span class="produts-card-span">Design:</span>
+                                            14.0 Inchs, 1366 X 768, 2.07 Kg, 34mm Thick.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!--Service Section-->
+<!--Using Bootstrap Grid System-->
+ 
+<div class="services pt-5 pb-5 p-2" id="serviceSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="services-heading pb-2 pt-2">Featured Services</h1>
+                    <p class="services-description pb-2">
+                        Most online stores offer lower prices. Online shopping makes price comparision simpler and quicker. It is very convenient to shop from where you are located . It saves you the cost of driving to stores, as well as parking fees.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 mt-4">
+                    <div class="services-card p-3 text-center shadow">
+                        <img class="services-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677505177/infinity-services-1_viajgh.png" alt="free-services" />
+                        <h1 class="services-card-heading pt-2">Fast and Free Delivery</h1>
+                        <p class="services-card-description pt-2 pb-2">Fast, free, and convenient delivery choices on millions of items.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-4">
+                    <div class="services-card p-3 text-center shadow">
+                        <img class="services-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677505259/infinity-services-2_su7dfp.png" alt="money-back-service" />
+                        <h1 class="services-card-heading pt-2">100% Money back guarantee</h1>
+                        <p class="services-card-description pt-2 pb-2">This is probably the most popular guarantee in the world.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-4">
+                    <div class="services-card p-3 text-center shadow">
+                        <img class="services-card-image" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677505337/infinity-services-3_wlhagv.png" alt="online-support-service" />
+                        <h1 class="services-card-heading pt-2">Online Support 24/7</h1>
+                        <p class="services-card-description pt-2 pb-2">Our Online Support will provide yoy with many usful functions, valuable information, tips.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!--Events Section-->
+<!--Using Bootstrap Grid System-->
+
+<div class = "mb-5" id = "eventsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="events-heading pt-2 pb-2">Featured Events</h1>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active events-card p-4 text-center">
+                                <div class="d-flex flex-row justify-content-start">
+                                    <button class="btn btn-primary ml-3 mr-4">New</button>
+                                    <button class="btn btn-primary">Sheduled</button>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                <div class="mr-md-5 mr-md-5">
+                                <p class=" events-card-heading pt-2">Requirement of 2000 Diodes at Nasik Palnt</p>
+                                <p class="events-card-time">Nov 19, Sat 2PM onwords</p>
+                                <img src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677513744/infinity-events-1_kbmz9z.png" class="events-card-image" alt="...">
+                                <h1 class="events-card-description pt-2">-Gautham, Founder of Nasik Company</h1>
+                            </div>
+                            <div class="pt-3 ml-md-5 pl-md-5">
+                                <button class="btn btn-primary events-date-button">Nov</button>
+                                <p class="events-date">19</p>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="carousel-item events-card p-4 text-center">
+                                <div class="d-flex flex-row justify-content-start">
+                                    <button class="btn btn-primary ml-3 mr-4">New</button>
+                                    <button class="btn btn-primary">Sheduled</button>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                <div class="mr-md-5 mr-md-5">
+                                <p class=" events-card-heading pt-2">Requirement of 2000 Diodes at Nasik Palnt</p>
+                                <p class="events-card-time">Nov 19, Sat 2PM onwords</p>
+                                <img src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677513744/infinity-events-1_kbmz9z.png" class="events-card-image" alt="...">
+                                <h1 class="events-card-description pt-2">-Gautham, Founder of CocoPay Company</h1>
+                            </div>
+                            <div class="pt-3 ml-md-5 pl-md-5">
+                                <button class="btn btn-primary events-date-button">Nov</button>
+                                <p class="events-date">19</p>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="carousel-item events-card p-4 text-center ">
+                                <div class="d-flex flex-row justify-content-start">
+                                    <button class="btn btn-primary ml-3 mr-4">New</button>
+                                    <button class="btn btn-primary">Sheduled</button>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                <div class="mr-md-5 mr-md-5">
+                                <p class=" events-card-heading pt-2">Requirement of 2000 Diodes at Nasik Palnt</p>
+                                <p class="events-card-time">Nov 19, Sat 2PM onwords</p>
+                                <img src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677513744/infinity-events-1_kbmz9z.png" class="events-card-image" alt="...">
+                                <h1 class="events-card-description pt-2">-Gautham, Founder of CocoPay Company</h1>
+                            </div>
+                            <div class="pt-3 ml-md-5 pl-md-5">
+                                <button class="btn btn-primary events-date-button">Nov</button>
+                                <p class="events-date">19</p>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="text-right mt-3">
+                            <button type="button" data-target="#carouselExampleControls" data-slide="prev" class="button-styling">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button type="button" data-target="#carouselExampleControls" data-slide="next" class="button-styling">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+       
+
+    </div>
+</div>
+
+<!--Footer-->
+<!--For Professional view only (developed on my pernonel view)-->
+<!--Using Bootstrap Grid System and Font awesome Icons-->
+
+<div class="footer-section pt-5 pb-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 text-md-left text-center">
+                <div>
+                    <img class="infinity-logo pt-2 pb-2" src="https://res.cloudinary.com/dymhfuzzi/image/upload/v1677492709/infinity_logo_apruwi.jpg" alt="" />
+                </div>
+                <div class="d-flex flex-row justify-content-center justify-content-md-start">
+                    <div class="icon-styling">
+                        <i class="fa-brands fa-google icons"></i>
+                    </div>
+                    <div class="icon-styling">
+                        <i class="fa-brands fa-twitter icons"></i>
+                    </div>
+                    <div class="icon-styling">
+                        <i class="fa-brands fa-instagram icons"></i>
+                    </div>
+                    <div class="icon-styling">
+                        <i class="fa-brands fa-linkedin icons"></i>
+                    </div>
+                </div>
+                <div class=" p-2">
+                    <p class="footer-section-description">Embassy Signet, Cessna Business Park, Marathalli Outer Ring Road, Bangalore, 560103, IN</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 pt-5 pl-sm-5 pl-md-0">
+                <div class="footer-section-card">
+                    <h1 class="footer-section-card-heading">Contact Us</h1>
+                    <div class="d-flex flex-row pt-3">
+                        <i class="fa-solid fa-envelope icons "></i>
+                        <h1 class="footer-section-description pl-2">hr@infinityresearch.com</h1>
+                    </div>
+                    <div class="d-flex flex-row pt-3">
+                        <i class="fa-solid fa-phone icons"></i>
+                        <h1 class="footer-section-description pl-2">1234506789</h1>
+                    </div>
+                    <div class="d-flex flex-row pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill icons" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+                        <h1 class="footer-section-description pl-2">Infinity</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 pt-5 pl-sm-5 pl-md-0 ">
+                <div class="footer-section-card">
+                    <h1 class="footer-section-card-heading">Let Us Help You</h1>
+                    <h1 class="footer-section-description pt-1">100% Purchase Protection</h1>
+                    <h1 class="footer-section-description pt-1">Your Account</h1>
+                    <h1 class="footer-section-description pt-1">Return Center</h1>
+                    <h1 class="footer-section-description pt-1">Help</h1>
+                </div>
+            </div>
+            <div class="col-12">
+                <hr class="horizontal-line" />
+            </div>
+            <div class="col-12 d-flex flex-row justify-content-center pt-2">
+                <div class="footer-section-end-description">&copy</div>
+                <div>
+                    <p class="footer-section-end-description text-center pl-1">Infiniti Research Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
